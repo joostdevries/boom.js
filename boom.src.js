@@ -90,7 +90,7 @@
      * @return string if no argument was supplied
      */
     BOOM.prototype.html = function(html) {
-        if(html)
+        if(typeof html!=='undefined')
             this.el.innerHTML = html;
         else
             return this.el.innerHTML;
@@ -102,7 +102,7 @@
      * @return string if no argument was supplied
      */
     BOOM.prototype.text = function(text) {
-        if(html)
+        if(typeof text!=='undefined')
             this.el.innerText = text;
         else
             return this.el.innerText;
@@ -135,7 +135,7 @@
      * @return mixed if no argument was supplied
      */
     BOOM.prototype.val = function(val) {
-        if(val)
+        if(typeof val!=='undefined')
             this.el.value = val;
         else
             return this.el.value;
@@ -184,7 +184,7 @@
      * @param mixed attribute value
      */
     BOOM.prototype.css = function(att, val) {
-        if(val)
+        if(typeof val!=='undefined')
             this.el.style[att] = val;
         else
             return this.el.style[att];
