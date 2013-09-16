@@ -15,6 +15,7 @@ var myDiv = boom(['div', {cls:'my-div'}, {
         submit ['input', {type:'submit', name:'mybutton', id:'mybutton', value:'My value'}],
     }]
 }])
+myDiv.appendTo(document.body)
 ```
 
 After creating you BOOM, you can simply access all of its elements by name,
