@@ -21,7 +21,7 @@ After creating you BOOM, you can simply access all of its elements by name,
 for example:
 
 ```javascript
-myDiv.header.html('I've changed the <b>header</b>');
+myDiv.header.html('I\'ve changed the <b>header</b>');
 var val = myDiv.form.textfield.val();
 myDiv.form.listen('submit', function(evt) { });
 ```
