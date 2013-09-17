@@ -197,7 +197,7 @@
      * @return BOOM
      */
     s.boom = function(arg) {
-        if(arg.length) {
+        if(Object.prototype.toString.call(arg)=='[object Array]') {
             return createBOOM.apply(this, arg);
         }
         else {
